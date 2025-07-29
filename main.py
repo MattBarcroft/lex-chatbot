@@ -18,10 +18,14 @@ response = client.recognize_text(
 
 # Extract the messages object
 messages = response.get('messages', [])
+responseMessage = response.get('requestAttributes').get('x-amz-lex:qnA-search-response')
 
-if not messages:
-    print("No response from Lex.")
-    print(response)
+if not messages: 
+    print("No response from data sources")
+    if responseMessage:
+        print(responseMessage)
+    else:
+        print("No from Lex")
+        print(response)
 else:
-    # Print the first message content
     print(messages[0].get('content'))
