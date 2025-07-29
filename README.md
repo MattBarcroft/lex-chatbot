@@ -1,6 +1,6 @@
-# Python Power CLI Chatbot for Mars Mission
+# AI Chatbot CLI for Mars Mission
 
-This project is a Python-based Command Line Interface (CLI) chatbot powered by Amazon Lex. The chatbot is designed to answer questions about a mission to Mars by querying data stored in Amazon S3. The data consists of documents located in the `/docs` folder, which include information about travel policies, itineraries, restrictions, and visa requirements for Mars travelers.
+This project is a Python-based Command Line Interface (CLI) chatbot powered by Amazon Lex AI. The chatbot is designed to answer questions about a mission to Mars by querying data stored in Amazon S3. The data consists of documents located in the `/docs` folder, which include information about travel policies, itineraries, restrictions, and visa requirements for Mars travelers.
 
 ## Features
 
@@ -20,8 +20,8 @@ This project is a Python-based Command Line Interface (CLI) chatbot powered by A
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-repo/python-power-cli-chatbot.git
-   cd python-power-cli-chatbot
+   git clone https://github.com/MattBarcroft/lex-chatbot.git
+   cd lex-chatbot
    ```
 2. Set up a virtual environment:
 ```python3 -m venv .venv```
@@ -43,8 +43,8 @@ Enter your question when prompted. For example:
 
 The chatbot will respond with information retrieved from the documents stored in Amazon S3.
 
-![Mars Mission](q2.png "Question example")
-![Mars Mission](q1.png "Session based so can retreieve previous answers")
+![Mars Mission](./images/q2.png "Question example")
+![Mars Mission](./images/q1.png "Session based so can retreieve previous answers")
 
 
 
@@ -54,6 +54,10 @@ The chatbot will respond with information retrieved from the documents stored in
 - **Amazon Lex**: The input is sent to an Amazon Lex bot for natural language processing.
 - **Amazon S3**: The bot queries the documents stored in an S3 bucket to find relevant answers.
 - **Response**: The chatbot returns the most relevant response to the user.
+
+### ERD
+![Mars Mission](./images/erd.png "Entity Relationship Diagram")
+
 
 ## Future Enhancements
 
